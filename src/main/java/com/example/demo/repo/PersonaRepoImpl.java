@@ -28,6 +28,7 @@ public class PersonaRepoImpl implements IPersonaRepo{
 	@Override
 	public void actualizar(Persona persona) {
 		// TODO Auto-generated method stub
+		
 		this.entityManager.merge(persona);
 		
 	}
